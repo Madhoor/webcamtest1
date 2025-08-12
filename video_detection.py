@@ -38,7 +38,7 @@ def detect_person_and_fall_live():
     
     # Initialize video capture. Use 0 for the default webcam.
     # If you have multiple webcams, you might need to change this to 1, 2, etc.
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
     
     if not cap.isOpened():
         print("Error: Could not open webcam.")
@@ -154,3 +154,4 @@ def detect_person_and_fall_live():
 # Execute the function
 if __name__ == '__main__':
     detect_person_and_fall_live()
+
